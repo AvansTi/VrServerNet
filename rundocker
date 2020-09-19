@@ -1,0 +1,1 @@
+docker run -it -p 6666:6666 -p 1337:80 vrservernet:latest

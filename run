@@ -1,0 +1,6 @@
+cd /root/VrServerNet/VrServer
+while :
+do
+./rundocker
+sleep 1
+done
