@@ -126,6 +126,10 @@ namespace VrServer
                     return;
                 }
             }
+            if(session == null)
+            {
+            	Console.WriteLine("Could not find proper tunnel?");
+            }
             if(session != null && session.tunnels != null)
                 foreach (Tunnel tunnel in session.tunnels)
                     if (tunnel.session == this.session)
