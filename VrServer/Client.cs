@@ -179,7 +179,7 @@ namespace VrServer
 
         private void SessionList(dynamic json)
         {
-            List<Session> sessions = program.clients.Where(c => c.session != null).Select(c => c.session).ToList();
+            List<Session> sessions = program.clients.Where(c => c?.session != null).Select(c => c.session).ToList();
             Send("session/list", sessions);
         }
 
